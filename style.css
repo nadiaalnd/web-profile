@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F3EFE0;
+}
+#about {
+    max-height: calc(100% - 50px);
+    overflow-y: auto;
+}
+.hero {
+    background-image: url('img/main.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    height: 800px;
+}
+.hero h2 {
+    color: #F3EFE0;
+    text-shadow: 1px 1px 2px pink;
+}
+.hero h5 {
+    text-shadow: 1px 1px 2px rgb(52, 53, 59);
+}
+.logo {
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span {
+    color: #4A92D0;
+}
+.col-md-6 p {
+    color: black;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-indent: 50px;
+}
+.card {
+    border: none;
+}
+.card-body h4 {
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: .8rem;
+}
+.card-body p {
+    color: #373737;
+    font-weight: 400;
+    font-size: 14px;
+}
+.card:hover {
+    background: linear-gradient(170deg, #8dbae1, #4A92D0, #000);
+    box-shadow: rgba(0, 0, 0, 0.24) 0 10px 20px;
+    transition: all ease-in-out .3s;
+}
+.card:hover .card-body h4 {
+    color: white;
+    transition: all ease-in-out .3s;
+}
+.card:hover .card-body p {
+    color: white;
+    transition: all ease-in-out .3s;
+}
+.card-tools {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: white;
+}
+.form-area {
+    padding-top: 7%;
+}
+.row.single-form {
+    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+.left {
+    background: #141414;
+    padding: 200px 98px;
+}
+.left h2 {
+    font-family: poppins;
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+}
+.left h2 span {
+    font-weight: 100;
+}
+.single-form {
+    background: #fff;
+}
+.right {
+    padding: 70px 100px;
+    position: relative;
+}
+.right i {
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: #fff;
+}
+.form-control {
+    border: 2px solid #000;
+}
+.right button {
+    border: none;
+    border-radius: 0;
+    background: #252525;
+    width: 180px;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.right button:hover {
+    background-color: #252525;
+}
+/*responsive*/
+@media (min-width:768px) and (max-width:991px) {
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
+}
+@media (max-width:767px) {
+    .left {
+        padding: 90px 15px;
+        text-align: center;
+    }
+    .left h2 {
+        font-size: 25px;
+    }
+    .right {
+        padding: 25px;
+    }
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 46%;
+    }
+    .right button {
+        width: 150px;
+        padding: 12px 0;
+    }
+}
